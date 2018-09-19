@@ -1,0 +1,15 @@
+/* Universal Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Root */
+html {
+    font-size: 62.5%; /* 10/16 * 100 to define what 1rem equals*/
+}
+
+body {
+    box-sizing: border-box;
+}

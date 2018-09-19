@@ -1,2 +1,5 @@
 node_modules/*
 .idea/
+Natours/node_modules
+Natours/node_modules/*
+Natours/npm-debug.log
