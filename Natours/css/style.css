@@ -1,4 +1,19 @@
 /***************** Imports Start ***************/
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+1200-1800px: Normal styles apply here
+1800px+ : Big Desktops
+
+$breakpoint arguments:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px (browser default)
+*/
 /***************** Variables Start ***************/
 /***************** Variables End *****************/
 @keyframes moveInLeft {
@@ -38,7 +53,16 @@
 /* Root */
 html {
   font-size: 62.5%;
-  /* 10/16 * 100 to define what 1rem equals*/ }
+  /* 10/16 * 100 to define what 1rem equals so 1rem = 10px*/ }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
