@@ -27,6 +27,11 @@
     &__left {
         width: 33.33333333%;
         display: table-cell;
+
+        @include respond(small-desktop) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__right {
@@ -34,11 +39,23 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(small-desktop) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include respond(small-desktop) {
+            width: 50%;
+            height: 300px;
+            display: inline-block;
+            float: left;
+        }
     }
 
     &__text {
