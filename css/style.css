@@ -37,7 +37,7 @@ body {
     animation-fill-mode: backwards;
 }
 
-.template-links-container {
+.template-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,10 +45,13 @@ body {
     margin-bottom: 20px;
 }
 
+.template-link-container {
+    flex-basis: 33.33333%;
+}
+
 .template-link {
     text-decoration: none;
     display: inline-block;
-    flex-basis: 25%;
     margin-bottom: 30px;
     margin-left: 60px;
     margin-right: 50px;
@@ -63,6 +66,10 @@ body {
     height: 250px;
     transition: all 0.4s;
     filter: grayscale(100%);
+}
+
+.template-link__title {
+    font-size: 24px;
 }
 
 /* .footer {
