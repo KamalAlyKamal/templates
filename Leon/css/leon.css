@@ -1,0 +1,13 @@
+/* Global Variables Start */
+
+/* Global Variables End */
+/* Global Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+/* Global Rules End */
