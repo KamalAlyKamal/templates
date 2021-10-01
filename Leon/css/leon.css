@@ -1,6 +1,7 @@
 /* Global Variables Start */
 
 /* Global Variables End */
+
 /* Global Rules Start */
 * {
     -webkit-box-sizing: border-box;
@@ -11,3 +12,36 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 /* Global Rules End */
+
+.parent {
+    background-color: #EEE;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Small Screens Start */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Small Screens End */
+
+/* Medium Screens Start */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Medium Screens End */
+
+/* Large Screens Start */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Large Screens End */
