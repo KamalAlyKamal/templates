@@ -2,6 +2,10 @@
 :root {
     --primary-color: #10cab7;
     --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-backgroud: #F6F6F6;
+    --paragraph-color: #777;
+    --paragraph-line-height: 1.8;
 }
 /* End Global Variables */
 
@@ -194,14 +198,14 @@ body {
 
 .landing .intro-text p {
     font-size: 19px;
-    line-height: 1.8;
+    line-height: var(--paragraph-line-height);
 }
 /* End Landing Section */
 
 /* Start Features Section */
 .features {
-    padding: 60px 0;
-    background-color: #F6F6F6;
+    padding: var(--section-padding) 0;
+    background-color: var(--section-backgroud);
 }
 
 .features .container {
@@ -225,15 +229,15 @@ body {
 }
 
 .features .feat p {
-    line-height: 1.8;
-    color: #777;
+    line-height: var(--paragraph-line-height);
+    color: var(--paragraph-color);
     font-size: 17px;
 }
 /* End Features Section */
 
 /* Start Services Section */
 .services {
-    padding: 60px 0;
+    padding: var(--section-padding) 0;
 }
 
 .services .services-content {
@@ -269,9 +273,9 @@ body {
 }
 
 .services .services-content .srv .text p {
-    color: #777;
+    color: var(--paragraph-color);
     font-weight: 300;
-    line-height: 1.8;
+    line-height: var(--paragraph-line-height);
 }
 
 .services .services-content .image {
@@ -301,3 +305,41 @@ body {
     }
 }
 /* End Services Section */
+
+/* Start Portfolio Section */
+.portfolio {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-backgroud);
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+    width: 502px;
+    height: 372px;
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: var(--paragraph-color);
+    line-height: var(--paragraph-line-height);
+    margin-bottom: 0;
+}
+/* End Portfolio Section */
