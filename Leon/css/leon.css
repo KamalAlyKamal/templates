@@ -373,6 +373,7 @@ body {
     position: relative;
     width: 512px;
     height: 342px;
+    margin: auto 0;
 }
 
 @media (max-width: 991px) {
@@ -416,7 +417,7 @@ body {
 }
 
 .about .about-content .text {
-    flex-basis: calc(100% - 500px);
+    flex-basis: calc(100% - 730px);
 }
 
 .about .about-content .text p:first-of-type {
