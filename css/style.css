@@ -47,6 +47,7 @@ body {
 
 .template-link-container {
     flex-basis: 33.33333%;
+    margin-bottom: 20px;
 }
 
 .template-link {
